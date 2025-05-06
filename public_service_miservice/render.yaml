@@ -2,7 +2,7 @@ services:
   - type: web
     name: mi_service
     env: python
-    buildCommand: pip install -r public_service_miservice/requirements.txt
-    startCommand: uvicorn public_service_miservice/main:app --host 0.0.0.0 --port 10000
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
     plan: free
     envVars: []
