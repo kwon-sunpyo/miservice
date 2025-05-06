@@ -3,7 +3,12 @@ from fastapi.responses import FileResponse, JSONResponse
 import pandas as pd
 import os
 
-app = FastAPI(title="도서산간 판별 API")
+app = FastAPI(
+    title="도서산간 판별 API",
+    docs_url=None,
+    redoc_url=None,
+    openapi_url=None
+)
 
 # CSV 불러오기
 df = pd.read_csv("data/mi_service.csv", dtype={"zipcode": str})
