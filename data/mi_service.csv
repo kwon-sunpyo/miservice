@@ -1,0 +1,4 @@
+zipcode,region,is_island,is_mountain,surcharge
+40240,울릉군 울릉읍,True,False,4000
+63000,제주시 우도면,True,False,5000
+26001,강릉시 왕산면,False,True,3000
